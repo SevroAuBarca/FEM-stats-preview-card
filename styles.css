@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 17.5vh 65vh 17.5vh;
+}
+.container .card-component {
+  width: 100%;
+  height: 65vh;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-radius: 5px;
+  display: flex;
+}
+
+.container .card-component .card {
+  width: 50%;
+  overflow: hidden;
+}
+
+.container .card-component .text-component {
+  padding: 6%;
+  background-color: hsl(244, 38%, 16%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container .card-component .text-component h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.container .card-component .text-component span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: hsl(277, 64%, 61%);
+}
+
+.container .card-component .text-component p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 25px;
+  line-height: 4vh;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container .card-component .text-component .nums {
+  display: flex;
+  padding-top: 10vh;
+}
+
+.container .card-component .text-component .nums .likes {
+  padding-right: 50px;
+}
+
+.container .card-component .text-component .nums .likes h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.container .card-component .text-component .nums .likes h3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 10px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.container .card-component .image-component {
+  background: url(./images/image-header-desktop.jpg) hsl(277, 64%, 61%);
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.attribution {
+  color: floralwhite;
+  font-size: 11px;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.attribution a {
+  color: hsl(228, 69%, 64%);
+}
